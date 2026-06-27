@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Tide Parallax</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <aside class="progress-rail" aria-label="Section navigation">
+      <div class="progress-line" aria-hidden="true">
+        <span></span>
+      </div>
+      <nav>
+        <a href="#intro" class="is-active">Dawn</a>
+        <a href="#garden">Garden</a>
+        <a href="#archive">Archive</a>
+        <a href="#night">Night</a>
+      </nav>
+    </aside>
+
+    <main class="page">
+      <section class="scene scene--hero" id="intro" aria-labelledby="hero-title">
+        <div class="scene__viewport">
+          <div class="scene__backdrop" aria-hidden="true">
+            <span class="sun-halo" data-parallax data-speed="-0.24" data-depth="260"></span>
+            <span class="cloud cloud--wide" data-parallax data-speed="-0.12" data-depth="160"></span>
+            <span class="cloud cloud--small" data-parallax data-speed="-0.16" data-depth="180" data-axis="x"></span>
+            <span class="signal signal--left" data-parallax data-speed="0.28" data-depth="220" data-rotate="16"></span>
+            <span class="signal signal--right" data-parallax data-speed="0.34" data-depth="240" data-axis="both" data-rotate="-18"></span>
+            <span class="ridge ridge--back" data-parallax data-speed="-0.1" data-depth="140"></span>
+            <span class="ridge ridge--front" data-parallax data-speed="0.14" data-depth="180"></span>
+            <span class="spark spark--one" data-parallax data-speed="0.32" data-depth="210" data-axis="both"></span>
+            <span class="spark spark--two" data-parallax data-speed="0.24" data-depth="180" data-axis="both"></span>
+          </div>
+
+          <div class="scene__content hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Parallax experiment / signal tide</p>
+              <h1 id="hero-title">
+                Scroll through a drifting skyline where every layer answers a
+                different gravity.
+              </h1>
+              <p class="lede">
+                This page treats scrolling like stagecraft. Mountains drag
+                slowly, ribbons swing past the lens, glowing notes drift
+                overhead, and the whole thing changes character as you move
+                through it.
+              </p>
+              <div class="stat-strip">
+                <article class="stat-card">
+                  <span>04</span>
+                  scenes with sticky depth
+                </article>
+                <article class="stat-card">
+                  <span>18</span>
+                  independently drifting layers
+                </article>
+                <article class="stat-card">
+                  <span>00</span>
+                  stock photos, only shapes and light
+                </article>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <article class="glass-note" data-parallax data-speed="0.24" data-depth="170" data-axis="both" data-rotate="-5">
+                <p class="note-label">Why it works</p>
+                <p>
+                  The slow background gives you orientation. The quick
+                  foreground sells closeness.
+                </p>
+              </article>
+              <div class="scroll-pill" data-parallax data-speed="0.18" data-depth="120" data-axis="x">
+                <span>keep going</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--garden" id="garden" aria-labelledby="garden-title">
+        <div class="scene__viewport">
+          <div class="scene__backdrop" aria-hidden="true">
+            <span class="beam beam--a" data-parallax data-speed="-0.14" data-depth="170"></span>
+            <span class="beam beam--b" data-parallax data-speed="0.14" data-depth="210" data-axis="x"></span>
+            <span class="beam beam--c" data-parallax data-speed="0.22" data-depth="180" data-axis="both"></span>
+            <span class="chip chip--one" data-parallax data-speed="0.26" data-depth="200" data-axis="both" data-rotate="-10">elastic</span>
+            <span class="chip chip--two" data-parallax data-speed="0.18" data-depth="160" data-axis="both" data-rotate="12">depth</span>
+            <span class="chip chip--three" data-parallax data-speed="0.22" data-depth="170" data-axis="x" data-rotate="-8">motion</span>
+            <span class="orb orb--lime" data-parallax data-speed="-0.12" data-depth="140"></span>
+            <span class="orb orb--peach" data-parallax data-speed="0.3" data-depth="240" data-axis="both"></span>
+          </div>
+
+          <div class="scene__content scene__content--split">
+            <div class="copy-block">
+              <p class="eyebrow">Scene two / signal garden</p>
+              <h2 id="garden-title">
+                The midground is where the fun lives.
+              </h2>
+              <p>
+                Instead of stacking text on top of a background image, this
+                section lets objects share air. Beams move softly behind the
+                content, glass panels hover in front of it, and small labels
+                skate across the scene like loose stickers.
+              </p>
+              <div class="feature-row">
+                <article class="feature-card">
+                  <h3>Soft inertia</h3>
+                  <p>Motion eases with the scroll instead of snapping to it.</p>
+                </article>
+                <article class="feature-card">
+                  <h3>Readable at rest</h3>
+                  <p>The content stays clear even when the scene is busy.</p>
+                </article>
+                <article class="feature-card">
+                  <h3>Speed contrast</h3>
+                  <p>Big masses drift slowly while small accents move faster.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="panel-stack">
+              <article class="glass-panel panel--one" data-parallax data-speed="0.16" data-depth="160" data-axis="both" data-rotate="-6">
+                <p class="note-label">Foreground</p>
+                <h3>Close enough to brush past</h3>
+                <p>
+                  Fast objects should feel like they belong to the lens, not the
+                  wall behind it.
+                </p>
+              </article>
+              <article class="glass-panel panel--two" data-parallax data-speed="0.24" data-depth="210" data-axis="both" data-rotate="8">
+                <p class="note-label">Background</p>
+                <h3>Calm enough to anchor</h3>
+                <p>
+                  Slow layers stop the page from turning into noise and keep the
+                  depth believable.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--archive" id="archive" aria-labelledby="archive-title">
+        <div class="scene__viewport">
+          <div class="scene__backdrop" aria-hidden="true">
+            <span class="slab slab--one" data-parallax data-speed="-0.12" data-depth="150"></span>
+            <span class="slab slab--two" data-parallax data-speed="0.16" data-depth="210" data-axis="x"></span>
+            <span class="slab slab--three" data-parallax data-speed="0.22" data-depth="180" data-axis="both"></span>
+            <span class="ticker" data-parallax data-speed="0.24" data-depth="220" data-axis="x">PARALLAX / PARALLAX / PARALLAX</span>
+          </div>
+
+          <div class="scene__content archive-grid">
+            <div class="orbital-stage">
+              <span class="orbit orbit--outer" data-parallax data-speed="-0.08" data-depth="120"></span>
+              <span class="orbit orbit--inner" data-parallax data-speed="0.12" data-depth="150"></span>
+              <article class="artifact artifact--a" data-parallax data-speed="0.24" data-depth="200" data-axis="both" data-rotate="-10">
+                <p>Slow horizon</p>
+              </article>
+              <article class="artifact artifact--b" data-parallax data-speed="0.18" data-depth="160" data-axis="both" data-rotate="8">
+                <p>Fast accent</p>
+              </article>
+              <article class="artifact artifact--c" data-parallax data-speed="0.28" data-depth="220" data-axis="both" data-rotate="-14">
+                <p>Small spark</p>
+              </article>
+            </div>
+
+            <div class="copy-block copy-block--narrow">
+              <p class="eyebrow">Scene three / drift archive</p>
+              <h2 id="archive-title">
+                Foreground pieces break formation while the background stays calm.
+              </h2>
+              <p>
+                That contrast is what makes parallax feel dimensional instead of
+                decorative. Large planes move with restraint. Bright fragments
+                take bigger swings. The result feels more like walking through a
+                set than browsing a flat page.
+              </p>
+              <blockquote class="pull-quote">
+                "Fun to scroll" only happens when the motion has enough
+                discipline to leave room for surprise.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--night" id="night" aria-labelledby="night-title">
+        <div class="scene__viewport">
+          <div class="scene__backdrop" aria-hidden="true">
+            <span class="moon" data-parallax data-speed="-0.18" data-depth="160"></span>
+            <span class="star star--one" data-parallax data-speed="-0.08" data-depth="110"></span>
+            <span class="star star--two" data-parallax data-speed="-0.12" data-depth="130" data-axis="x"></span>
+            <span class="star star--three" data-parallax data-speed="0.1" data-depth="100" data-axis="x"></span>
+            <span class="line-wave line-wave--one" data-parallax data-speed="0.14" data-depth="150" data-axis="x"></span>
+            <span class="line-wave line-wave--two" data-parallax data-speed="0.2" data-depth="170" data-axis="x"></span>
+            <span class="line-wave line-wave--three" data-parallax data-speed="0.24" data-depth="210" data-axis="both"></span>
+          </div>
+
+          <div class="scene__content finale-grid">
+            <div class="copy-block copy-block--centered">
+              <p class="eyebrow">Final scene / night deck</p>
+              <h2 id="night-title">
+                The ending exhales instead of shouting.
+              </h2>
+              <p>
+                Stars glide almost imperceptibly, the signal lines lean sideways,
+                and the final panel hangs nearly still so the page can end with
+                atmosphere instead of clutter.
+              </p>
+              <a class="ghost-button" href="#intro">Scroll it again</a>
+            </div>
+            <article class="closing-card" data-parallax data-speed="0.18" data-depth="150" data-axis="both" data-rotate="-4">
+              <p class="note-label">Design note</p>
+              <p>
+                The best parallax pages are memorable because of their rhythm,
+                not because everything moves at once.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
